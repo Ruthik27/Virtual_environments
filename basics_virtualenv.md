@@ -1,31 +1,55 @@
-pip install virtualenv
-
-cd Documents
-mkdir Environments
-cd Environments
-
-ls
-
-virtualenv proect01_env
-
-source proect01_env/bin/activate
-deactivate
+>pip install virtualenv 
+>>this would install a virtual env
 
 
-pip list
+>cd Documents
+>>changing dir to where you want your virtual env 
 
-which python
-which pip
-python --version
+>mkdir Environments
+>>creating a new dir insdie which we would create virtual env
 
-pip install numpy
-pip install pandas
+>cd Environments
+>> inside the working dir
 
-pip freeze --local > requirements.txt
-ls
-cat requirements.txt
+>ls
+>> listing the dir files
 
-rm -rf proect01_env 
+>virtualenv proect01_env
+>>creating a virtual env with name proect01_env
+
+>source proect01_env/bin/activate
+>>to activate the virtual env
+
+>deactivate
+>>to deactivate the virtual env
+
+>pip list
+>>lisiting all the pip installed in the virtual env
+
+>which python
+>> python path which is used
+
+>which pip
+>> pip path which is used
+
+>python --version
+>> tells abt the python version
+
+>pip install numpy
+>
+>pip install pandas
+>>installing python modules
+
+>pip freeze --local > requirements.txt
+>>willl freeze the virtual env and will save the versions of modules installe in env in .txt file
+
+>ls
+>
+>cat requirements.txt
+>>will show the versions saved in the virtual env
+
+>rm -rf proect01_env 
+>> will remove the virtual env from dir
 
 ><h2>
 >1. Virtual envs are meant to be for your dependencies and packages and things like tht, but they are not for your project files.
